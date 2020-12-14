@@ -35,7 +35,7 @@ app.post ('/weatherData', (request, response) =>{
     projectData["temp"] = request.body.temp;
     projectData["date"] = request.body.date;
     projectData["user_response"] = request.body.user_response;
-
+    response.send(projectData);
     console.log(projectData);
 })
 
